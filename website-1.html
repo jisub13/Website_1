@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Discussion Blogs</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            :root {
+                --header-text-pos: 8px;
+                --move-blog-post: 15%;
+            }
+            body {
+                background-color: rgb(255, 255, 255);
+            }
+            .nav-table {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 5px 5px 5px 5px;
+            }
+            nav {
+                float: right;
+                position: relative;
+                top: var(--header-text-pos);
+            }
+            .nav-table:hover {
+                background-color: rgb(78, 185, 119);
+            }
+            .blog-post{
+                border-radius: 3%;
+                border-style: solid;
+                border-color: rgb(233, 181, 108);
+                position: absolute;
+                border-width: 5px;
+                background-color: antiquewhite;
+                padding: 5px 40px 5px 40px;
+                width: 50%;
+                height: 400px;
+                left: var(--move-blog-post);
+            }
+            .logo {
+                width: 100px;
+                height: 56.25px;
+            }
+            main {
+                position: relative;
+                top: 100px;
+            }
+            header {
+                background-color: rgb(107, 124, 107);
+                font-family: monospace, arial;
+                font-size: 35px;
+                height: 60px;
+                text-align: center;
+                padding: 10px;
+            }
+            .home-page {
+                position: relative;
+                top: var(--header-text-pos);
+                left: var(--move-blog-post);
+                width: 800px;
+            }
+            .recent-post{
+                position: relative;
+                left: var(--move-blog-post);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img style="float:left" class="logo" src="Logo.png" alt="logo">
+            <nav>
+                <a class="nav-table" href="#home">Home</a>
+                <a class="nav-table" href= "#blog">Blogs</a>
+                <a class="nav-table" href= "#about">About</a>
+                <a class="nav-table" href= "#discuss">Discuss</a>
+            </nav>
+            <div class="home-page">The Discussion Blog</div>
+        </header>
+        <main>
+            <h1 class="recent-post" >Most Recent</h1>
+            <div class="blog-post">
+                <p></p>
+            </div>
+        </main>
+    </body>
+</html>
